@@ -1,0 +1,3 @@
+from terminal:
+    gnatmake main.adb
+    ./main

@@ -43,22 +43,17 @@ package body math is
         end if;
     end Factorial;
     
-    function Sin (X: Float) return Float is
-        i:  Natural:=   1;
-        step:   Natural:= 1;
-        S:  Float:=   0.0;
+    function Sin(x: Float) return Float is
+        res: Float := x;
+        current: Float := x;
+        sign: Float := -1.0;
     begin
-        while i<=Integer(X) loop
-            if (i mod 2 = 0) then
-                S:= S - ((X**step)/Float(Factorial(step)));
-            else 
-                S:= S + ((X**step)/Float(Factorial(step)));
-            end if;
-            i:= i + 1;
-            step:= step + 2;
-        end loop;    
-
-        return S;
+        for i in 1..10000000 loop
+            current := (current * x * x) / (Float(2 * i) * Float(2*i + 1));
+            res := res + sign * current;
+            sign := -sign;
+        end loop;
+        return res;
     end Sin;
 
     function StringReverse(S: String) return String is

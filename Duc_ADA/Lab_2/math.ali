@@ -8,18 +8,16 @@ RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U math%b		math.adb		7fbe11e7 NE OO PK IL
+U math%b		math.adb		94b20951 NE OO PK IL
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
-Z system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 U math%s		math.ads		03697e34 EE NE OO PK IL
 
 D math.ads		20200915121632 03697e34 math%s
-D math.adb		20200915121632 7cd76fd3 math%b
+D math.adb		20200916142949 97db7765 math%b
 D system.ads		20200819050647 085b6ffb system%s
 D s-conca2.ads		20200819050645 02a0d7d0 system.concat_2%s
-D s-exnllf.ads		20200819050645 bc7ebbdc system.exn_llf%s
 D s-parame.ads		20200819050646 4752c4cb system.parameters%s
 D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
 D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
@@ -34,35 +32,36 @@ G c Z s b [reversenumber math 8 14 none]
 G c Z s b [power math 9 14 none]
 G c Z s b [recursivefact math 10 14 none]
 X 1 math.ads
-1K9*math 11l5 11e9 2|1b14 101l5 101t9
+1K9*math 11l5 11e9 2|1b14 96l5 96t9
 2V14*AddDigitNumber{natural} 2>30 2|3b13 12l8 12t22 16s25
 2i30 N{natural} 2|3b28 5r25
 3V14*CheckIfDividedByNine{boolean} 3>36 2|15b14 22l9 22t29
 3i36 N{natural} 2|15b36 16r40
 4V14*FindPerfectNumber{boolean} 4>32 2|24b14 37l9 37t26
 4i32 N{natural} 2|24b33 28r21 29r16 33r13
-5V14*Factorial{natural} 5>26 2|39b14 41s34 44l9 44t18 53s42 55s42
+5V14*Factorial{natural} 5>26 2|39b14 41s34 44l9 44t18
 5i26 N{natural} 2|39b26 41r12 41r30 41r45
-6V14*Sin{float} 6>19 2|46b14 62l9 62t12
-6f19 X{float} 2|46b19 51r26 53r27 55r27
-7V14*StringReverse{string} 7>28 2|64b14 69s14 71l9 71t22
-7a28 S{string} 2|64b28 66r8 67r14 69r28 69r30 69r41 69r52 69r54
-8V14*ReverseNumber{natural} 8>28 2|73b14 82l9 82t22
-8i28 X{natural} 2|73b28 75r25
-9V14*Power{positive} 9>20 9>33 2|84b14 90s20 90s26 91s23 93l9 93t14
-9i20 N{positive} 2|84b20 86r13 89r36 89r38 90r32 91r21 91r29
-9i33 X{positive} 2|84b33 87r12 88r13 89r17 90r34 91r32
-10V14*RecursiveFact{positive} 10>28 2|95b14 98s23 100l9 100t22
-10i28 N{positive} 2|95b28 97r13 97r30 98r21 98r37
+6V14*Sin{float} 6>19 2|46b14 57l9 57t12
+6f19 X{float} 2|46b18 47r23 48r27 52r35 52r39
+7V14*StringReverse{string} 7>28 2|59b14 64s14 66l9 66t22
+7a28 S{string} 2|59b28 61r8 62r14 64r28 64r30 64r41 64r52 64r54
+8V14*ReverseNumber{natural} 8>28 2|68b14 77l9 77t22
+8i28 X{natural} 2|68b28 70r25
+9V14*Power{positive} 9>20 9>33 2|79b14 85s20 85s26 86s23 88l9 88t14
+9i20 N{positive} 2|79b20 81r13 84r36 84r38 85r32 86r21 86r29
+9i33 X{positive} 2|79b33 82r12 83r13 84r17 85r34 86r32
+10V14*RecursiveFact{positive} 10>28 2|90b14 93s23 95l9 95t22
+10i28 N{positive} 2|90b28 92r13 92r30 93r21 93r37
 X 2 math.adb
 4i9 S{natural} 8m13 8r18 11r16
 5i9 T{natural} 7r17 8r23 9m13 9r18
 16i9 A{natural} 18r13
 25i9 S{natural} 30m17 30r21 33r17
 28i13 i{integer} 29r22 30r25
-47i9 i{natural} 51r15 52r17 57m13 57r17
-48i9 step{natural} 53r30 53r52 55r30 55r52 58m13 58r20
-49f9 S{float} 53m17 53r21 55m17 55r21 61r16
-74i9 M{natural} 78m13 78r17 81r16
-75i9 N{natural} 77r16 78r25 79m13 79r17
+47f9 res{float} 53m13 53r20 56r16
+48f9 current{float} 52m13 52r25 53r33
+49f9 sign{float} 53r26 54m13 54r22
+51i13 i{integer} 52r55 52r68
+69i9 M{natural} 73m13 73r17 76r16
+70i9 N{natural} 72r16 73r25 74m13 74r17
 

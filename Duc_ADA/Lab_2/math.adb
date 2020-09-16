@@ -45,12 +45,12 @@ package body math is
     
     function Sin(x: Float) return Float is
         res: Float := x;
-        current: Float := x;
+        curr: Float := x;
         sign: Float := -1.0;
     begin
-        for i in 1..10000000 loop
-            current := (current * x * x) / (Float(2 * i) * Float(2*i + 1));
-            res := res + sign * current;
+        for i in 1..10000 loop
+            curr := (curr * x * x) / (Float(2 * i) * Float(2*i + 1));
+            res := res + sign * curr;
             sign := -sign;
         end loop;
         return res;

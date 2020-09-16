@@ -1,7 +1,6 @@
 ### Bunch of shit from ELTE 
-## Also
-# Terminal Cheat Sheet
-# Terminal Cheat Sheet
+# Also
+## Terminal Cheat Sheet
 ```
 pwd         # print working directory
 ls          # list files in directory

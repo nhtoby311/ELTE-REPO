@@ -18,6 +18,7 @@ kill        # terminate existing process
 rmd         # permanently delete file
 rmdir       # remove directory
 
+
 ## Working with Git
 
 ### Quick Start
@@ -69,9 +70,12 @@ git merge upstream/development					# Merge original with fork
 
 git diff --name-only | uniq | xargs subl		# Fix conflicts in Sublime Text
 
+
+
 ### Importing Patches
 git apply < ../p/foo.patch
 git commit -a
+
 
 ### Exporting Patches
 <make changes>
@@ -79,6 +83,9 @@ git commit -a -m "commit message"
 git format-patch HEAD^  # creates 0001-commit-message.txt
                         # (HEAD^ means every patch since one revision before the
                         # tip of the branch, also known as HEAD)
+
+
+
 
 ### Inspecting Revisions
 
@@ -117,6 +124,8 @@ git show f665776    # a unique prefix is sufficient
 git tag v1.0.0                      # make current HEAD known as "v1.0.0"
 git tag interesting v1.4.4-g730996f # tag a specific revision (not HEAD)
 
+
+
 ### Comparing Revisions
 # diff between two branches
 git diff origin..master             # pipes a diff into PAGER
@@ -124,6 +133,9 @@ git diff origin..master > my.patch  # pipes a diff into my.patch
 
 # get diffstat of uncommitted work
 git diff --stat HEAD
+
+
+
 
 ## Sublime as default text editor
 cd ~

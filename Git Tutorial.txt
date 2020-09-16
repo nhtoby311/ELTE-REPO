@@ -18,7 +18,6 @@ kill        # terminate existing process
 rmd         # permanently delete file
 rmdir       # remove directory
 
-
 ## Working with Git
 
 ### Quick Start
@@ -33,12 +32,8 @@ git push origin :<branchname>	# deletes remote branch
 
 git subtree push --prefix docs origin gh-pages  # push docs as subtree to gh-pages
 
-
-
 ### Clone Directory
 git clone <url>
-
-
 
 ### Create Project
 cd project/
@@ -46,8 +41,6 @@ git init                    # initializes the repository
 git add .                   # add those 'unknown' files
 git commit                  # commit all changes, edit changelog entry
 git rm --cached <file>...   # ridiculously complicated command to undo, in case you forgot .gitignore
-
-
 
 ### Branching and Merging
 git branch                          # show list of all branches (* is active)
@@ -60,17 +53,12 @@ git pull . linux-work               # merge changesets from linux-work (all Git 
 git branch -m <oldname> <newname>   # rename branch
 git branch -m <newname>             # rename current branch
 
-
-
 ### Delete Project
 git branch -d <branchname>   	# deletes local branch
 git push origin :<branchname>	# deletes remote branch
 git remote prune <branchname>	# update local/remote sync
 
-
-
 ### Merging Upstream
-
 git remote -v 									# Get list of remote branches
 git remote add upstream <upstream github url>	# Add original as upstream
 git remote -v 									# Check upstream
@@ -81,13 +69,9 @@ git merge upstream/development					# Merge original with fork
 
 git diff --name-only | uniq | xargs subl		# Fix conflicts in Sublime Text
 
-
-
 ### Importing Patches
 git apply < ../p/foo.patch
 git commit -a
-
-
 
 ### Exporting Patches
 <make changes>
@@ -95,9 +79,6 @@ git commit -a -m "commit message"
 git format-patch HEAD^  # creates 0001-commit-message.txt
                         # (HEAD^ means every patch since one revision before the
                         # tip of the branch, also known as HEAD)
-
-
-
 
 ### Inspecting Revisions
 
@@ -136,8 +117,6 @@ git show f665776    # a unique prefix is sufficient
 git tag v1.0.0                      # make current HEAD known as "v1.0.0"
 git tag interesting v1.4.4-g730996f # tag a specific revision (not HEAD)
 
-
-
 ### Comparing Revisions
 # diff between two branches
 git diff origin..master             # pipes a diff into PAGER
@@ -145,9 +124,6 @@ git diff origin..master > my.patch  # pipes a diff into my.patch
 
 # get diffstat of uncommitted work
 git diff --stat HEAD
-
-
-
 
 ## Sublime as default text editor
 cd ~

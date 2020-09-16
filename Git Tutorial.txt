@@ -85,8 +85,6 @@ git format-patch HEAD^  # creates 0001-commit-message.txt
                         # tip of the branch, also known as HEAD)
 
 
-
-
 ### Inspecting Revisions
 
 # inspect history visually

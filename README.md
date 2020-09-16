@@ -81,13 +81,14 @@ git apply < ../p/foo.patch
 git commit -a
 ```
 ### Exporting Patches
-<make changes>
+
 ```
 git commit -a -m "commit message"
 git format-patch HEAD^  # creates 0001-commit-message.txt
                         # (HEAD^ means every patch since one revision before the
                         # tip of the branch, also known as HEAD)
 ```
+
 ### Inspecting Revisions
 
 # inspect history visually

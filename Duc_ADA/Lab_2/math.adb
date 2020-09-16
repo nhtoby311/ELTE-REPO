@@ -1,11 +1,11 @@
 package body math is
 
    function AddDigitNumber(N: Natural) return Natural is
-        S:  Natural:=   0;
-        T:  Natural:=   N;
+        S: Natural := 0;
+        T: Natural := N;
    begin
         while ( T /= 0 ) loop
-            S := S + (T mod 10);
+            S := S + ( T mod 10 );
             T := T / 10;            
         end loop;
         return S;
@@ -13,7 +13,7 @@ package body math is
 
 
     function CheckIfDividedByNine (N: Natural) return Boolean is
-        A:  Natural:=   AddDigitNumber(N);
+        A: Natural := AddDigitNumber(N);
     begin
         if (A mod 9 = 0) then
             return True;
@@ -22,7 +22,7 @@ package body math is
     end CheckIfDividedByNine;
 
     function FindPerfectNumber (N: Natural) return Boolean is
-        S:  Natural:=   0;
+        S: Natural := 0;
     begin
         --Find sum of divisor
         for i in 1..N-1 loop
@@ -66,8 +66,8 @@ package body math is
     end StringReverse;
 
     function ReverseNumber(X: Natural) return Natural is
-        M:  Natural:=   0;
-        N:  Natural:=   X;
+        M: Natural := 0;
+        N: Natural:= X;
     begin
         while (N/=0) loop
             M:= M*10 + (N mod 10);
@@ -79,7 +79,7 @@ package body math is
     function Power(N: Positive; X: Positive) return Positive is
     begin
         if (N=1) then return 1; end if;
-        If X=0 then return 1; end if;
+        if X=0 then return 1; end if;
         if (X mod 2 = 0) then
             if (X = 2) then return N*N; end if;    
             return Power(Power(N,X/2),2);        

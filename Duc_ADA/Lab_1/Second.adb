@@ -1,7 +1,6 @@
 with Ada.Text_IO;
 with Ada.Integer_Text_IO;
 use Ada.Text_IO;
-
 procedure Second is
     a: Integer;
     b: Integer;
@@ -17,6 +16,4 @@ begin
     else
         Ada.Integer_Text_IO.Put(c);
     end if;
-        
-
 end Second;

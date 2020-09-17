@@ -1,0 +1,9 @@
+Dear <name>,
+
+I would like to invite you to the Santa Claus meeting at <date>.
+I would highly appreciate, if you could join us.
+Please response as soon as possible.
+It will be held at my weekend house. Please find it on a map: <address>
+
+Best wishes,
+Szilard

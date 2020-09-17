@@ -1,0 +1,4 @@
+duc;kolodsy-ter;12-02-2002
+tien;ujbuda-kozpont;12-31-2019
+thang;keleti-palyudvar;11-11-2000
+dang;kalvin-ter;01-12-2011

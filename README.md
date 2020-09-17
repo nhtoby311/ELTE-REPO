@@ -30,6 +30,8 @@ git push -u origin <new-branch> 	# Sync local branch with remote
 git checkout <branch> 				# Checkout branch
 git push origin <branch> 			# Push branch to remote
 
+git commit -a --allow-empty-message -m ''  # Push without commit
+
 git branch -d <branchname>   	# deletes local branch
 git push origin :<branchname>	# deletes remote branch
 

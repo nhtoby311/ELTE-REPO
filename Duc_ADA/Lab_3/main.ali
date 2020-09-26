@@ -1,0 +1,109 @@
+V "GNAT Lib v2020"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U main%b		main.adb		b804eef1 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050642 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D main.adb		20200926105056 e0bbb238 main%b
+D system.ads		20200819050647 085b6ffb system%s
+D s-conca2.ads		20200819050645 02a0d7d0 system.concat_2%s
+D s-conca5.ads		20200819050645 875e432e system.concat_5%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050645 02dbe0c2 system.img_int%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 6 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 2r5 3r6 4r5
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|3w10 4r9
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 2r9
+264U14*New_Line 12|16s9
+465U14*Put 12|98s9 101s9 105s13 110s13 126s5
+508U14*Put_Line 12|18s13 77s21 123s5 130s5 133s5 137s5
+X 12 main.adb
+6U11*main 6b11 139l5 139t9
+8I10 Index<integer> 11r27 12r27 12r43 25r49 77r37 77r67 92r36 92r46 92r56
+. 92r66
+9I10 Elem<integer> 11r46 12r62 18r23 22r45 31r34 57r17 60r21 69r21 77r106
+. 98r13 101r13 105r17 110r17 123r43
+11A10 TArray(9I10)<8I10> 14r34 22r30 38r32 56r10 116r10 117r11
+12A10 Matrix(9I10)<8I10><8I10> 55r27 83r27 92r25 118r8 119r8 120r10
+14U15 PrintArr 14b15 14=24 20l9 20t17 52s9
+14a24 T{11A10} 17r18 18r35
+17i13 I<integer> 18r37
+22V14 SumRecursive{9I10} 22b14 22>27 25s33 29l9 29t21 123s54
+22a27 T{11A10} 24r12 25r20 25r22 25r47 25r60 25r70 27r20 27r22
+31U15 Swap 31b15 31=21 31=24 36l9 36t13 46s25
+31i21 A{9I10} 33m9 33r14 34r14 35m9 35r14
+31i24 B{9I10} 33r18 34m9 34r18 35r18
+38U15 BBSort 38b15 38=22 53l9 53t15 127s5
+38a22 T{11A10} 43r22 44r25 45r24 45r31 46m30 46r30 46m36 46r36 52m18
+39b9 B{boolean} 41r15 42m13 47m25
+43i17 i<integer> 44r20 45r26 45r33 46r32 46r38
+55U15 LocalMax 55b15 55>24 81l9 81t17 134s5
+55a24 M{12A10} 56r17 59r18 61r22 62r27 63r29 66r21 68r18 70r22 71r27 72r29
+. 75r22 76r27 76r56 77r51 77r81
+56a5 min{11A10} 66m13 66r34 76r50 76r67
+57i5 minV{9I10} 60m13 62r20 63m21 66r48
+57i11 maxV{9I10} 69m13 71r20 72m21 76r20 76r43 77r117
+59i13 j<integer> 62r31 63r33 66r17
+61i17 i<integer> 62r29 63r31
+68i13 i<integer> 71r29 72r31 76r29 77r49
+70i17 j<integer> 71r31 72r33
+75i17 j<integer> 76r31 76r54 77r79
+83V14 DigalSum{integer} 83b14 83>23 90l9 90t17 130s59
+83a23 M{12A10} 86r18 87r29
+84i9 S{integer} 87m13 87r17 89r16
+86i13 I<integer> 87r31 87r33
+92U15 spiral 92b15 92>22 92>33 92>43 92>53 92>63 113s5 114l9 114t15 138s5
+92a22 K{12A10} 98r24 101r24 105r28 110r28 113r12
+92i33 i{8I10} 94r9 97r14 98r26 100r15 103r16 109r27 113r14
+92i43 j{8I10} 94r21 104r26 108r16 110r32 113r18
+92i53 m{8I10} 94r14 100r22 103r9 105r30 109r34 113r22
+92i63 n{8I10} 94r26 97r18 101r28 104r30 108r9 113r26
+97i9 c<integer> 98r28
+100i9 c<integer> 101r26
+104i13 c<integer> 105r34
+109i13 c<integer> 110r30
+116a5 Arr{11A10} 123r67
+117a5 Arr2{11A10} 127m12 127r12
+118a5 A{12A10} 130r68
+119a5 M{12A10} 134r14
+120a5 SPI{12A10} 138r12 138r16 138r26 138r36 138r48
+

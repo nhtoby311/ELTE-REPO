@@ -66,4 +66,5 @@ begin
     Get( N );
     Put("Factorial: ");
     Put( math.RecursiveFact(N) );
+    
 end main;

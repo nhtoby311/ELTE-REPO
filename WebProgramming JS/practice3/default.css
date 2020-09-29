@@ -4,3 +4,6 @@
 #tasks {
     list-style: none;
 }
+input[type='checkbox'] {
+    float :left;
+}

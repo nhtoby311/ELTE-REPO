@@ -15,7 +15,7 @@ taskInput.parentElement.addEventListener('submit', function (event) {
     for (const task of tasks) {
         if (task && !tasksArray.includes(task)) {
             tasksArray.push(task);
-            taskList.innerHTML += `<li data-index="${ tasksArray.length - 1 }"><input id="checkbox" type="checkbox" name="checkbox" style="float: left;">${ task } <button type="button">x</button></li>`;
+            taskList.innerHTML += `<li data-index="${ tasksArray.length - 1 }"><input type="checkbox">${ task } <button type="button">x</button></li>`;
             taskInput.value = '';
         }
     }
@@ -45,7 +45,8 @@ removeDoneButton.addEventListener('click',function(){
 });
 
 toggleSelected.addEventListener('click', function (){
-    var toggleCheckBoxes = document.getElementsByName('checkbox');
+    // var toggleCheckBoxes = document.querySelectorAll('#checkbox');
+    var toggleCheckBoxes = document.querySelectorAll("#tasks input[type=checkbox]");
     var items = document.querySelectorAll("#tasks li");
     for(var i = 0; i < toggleCheckBoxes.length; i++)
     {

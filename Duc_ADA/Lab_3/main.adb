@@ -113,6 +113,11 @@ procedure main  is
     spiral(K,i+1,j+1,m-1,n-1);
     end spiral;
 
+    procedure GetNextElem(T: TArray ; I : Index) is
+    begin
+        Put_Line(Elem'Image(T'Last));
+    end GetNextElem;
+
     Arr: TArray := (4,5,2,1);
     Arr2: TArray := (5,2,2,5,3,3,6,7,9,8,19);
     A: Matrix := ((1,1,1),(2,2,2),(3,3,3));
@@ -137,5 +142,9 @@ begin
     Put_Line("Spiral: ");
     Spiral(SPI,SPI'First,SPI'First,SPI'First+5,SPI'First+5);
     
+    --Get next Element
+    -- GetNextElem(Arr,2);
+    new_line;
+    GetNextElem(Arr,2);
 end main;
 

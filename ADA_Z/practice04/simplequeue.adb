@@ -1,5 +1,4 @@
 package body SimpleQueue is
-
    procedure Push(Q: in out Queue; E: in Elem) is
    begin
       if Q.Size < Q.A'Length then
@@ -17,16 +16,20 @@ package body SimpleQueue is
       Q.Size := Q.Size - 1;
       return E;
    end;
+
    function IsEmpty(Q: Queue) return Boolean is
    begin
       return Size(Q) = 0;
    end;
+
    function IsFull(Q: Queue) return Boolean is
    begin
       return Size(Q) = Q.A'Length;
    end;
+
    function Size(Q: Queue) return Natural is
    begin
       return Q.Size;
    end;
+   
 end SimpleQueue;

@@ -1,0 +1,37 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U vector_package%b	vector_package.adb	2fbd616d NE OO PK GE IL
+
+U vector_package%s	vector_package.ads	2a9128cd BN EE NE OO PK GE IL
+
+D system.ads		20200819050647 085b6ffb system%s
+D vector_package.ads	20201007231838 2a9128cd vector_package%s
+D vector_package.adb	20201007231530 052c49a0 vector_package%b
+G a e
+G c Z s b [vector_package standard 3 9 none]
+X 2 vector_package.ads
+2+10 E
+3k9*vector_package 2z10 27E9 32l5 32e19 3|1b14 35l5 35t19
+5I12*Length{positive} 6r22 27r21
+6R9*Vector 6d17 10r21 11r22 12r21 13r26 14r31 27c9 30e14 3|4r22 9r23 14r21
+. 19r27 27r32
+6i17 Max{5I12} 27r16 28r29
+7A9*TArray(integer)<integer> 28r19
+10V13*size{natural} 10>18 3|4b14 7l13 7t17
+10r18 V{6R9} 3|4b19 6r20
+11V13*first{integer} 11>19 3|9b14 12l13 12t18
+11r19 V{6R9} 3|9b20 11r21
+12V13*last{integer} 12>18 3|14b13 17l13 17t17
+12r18 V{6R9} 3|14b18 16r20
+13V13*is_Empty{boolean} 13>23 3|19b14 25l13 25t21
+13r23 V{6R9} 3|19b24 21r17
+14U14*insert 14=21 14>39 3|27b15 33l13 33t19
+14r21 V{6R9} 3|27b22 29r16 29r28 30m17 30r30 31m17 31r24
+14i39 number{integer} 3|27b40 31r38
+28a13 Data{7A9} 3|11r23 16r22 29r30 31m19
+29i13 Pointer{natural} 3|6r22 21r19 29r18 30m19 30r32 31r26
+

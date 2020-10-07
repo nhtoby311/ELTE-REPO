@@ -1,0 +1,59 @@
+V "GNAT Lib v2020"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U main%b		main.adb		a7c519b2 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+W vector_package%s	vector_package.adb	vector_package.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D main.adb		20201007231842 23a0e412 main%b
+D system.ads		20200819050647 085b6ffb system%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgboo.ads		20200819050645 f5d971eb system.img_bool%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+D vector_package.ads	20201007231838 2a9128cd vector_package%s
+D vector_package.adb	20201007231530 052c49a0 vector_package%b
+G a e
+G c Z b b [main standard 4 11 none]
+G r i none [main standard 4 11 none] [vector_package standard 3 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 10|1r22 2r5
+X 6 a-textio.ads
+57K13*Text_IO 727e16 10|1w26 2r9
+508U14*Put_Line 10|11s5
+X 10 main.adb
+4U11*main 4b11 12l5 12t9
+5K13 Vec[25|3] 7r8 10r5 11r28
+7r5 V{25|6R9[5]} 10m16 10r16 11r41
+X 25 vector_package.ads
+3k9*vector_package 10|1w6 5r24 25|32e19
+6R9 Vector 10|7r12[5]
+13V13 is_Empty{boolean} 10|11s32[5]
+14U14 insert 10|10s9[5]
+

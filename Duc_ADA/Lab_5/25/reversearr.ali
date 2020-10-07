@@ -1,0 +1,28 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U reversearr%b		reversearr.adb		639cd559 NE OO SU GE
+
+U reversearr%s		reversearr.ads		74625593 BN EE NE OO GE IL
+
+D reversearr.ads	20201007183950 74625593 reversearr%s
+D reversearr.adb	20201007183945 17fe80ca reversearr%b
+D system.ads		20200819050647 085b6ffb system%s
+G a e
+G c Z s b [reversearr standard 6 15 none]
+X 1 reversearr.ads
+2+10 Elem 4r46 5r37
+3E10 Index 4r27 2|2r11 3r10 7r16 8r15
+4A10 TArray(2+10)<3E10> 6r36 2|1r32
+5U20 swap 5=25 5=27 2|6s7
+5*25 x{2+10}
+5*27 y{2+10}
+6u15*ReverseArr 6=26 2|1b11 10l5 10t15
+6*26 A{4A10} 2|1b22 2r20 3r19 6m12 6r12 6m22 6r22
+X 2 reversearr.adb
+2*4 first{1|3E10} 5r10 6r14 7m7 7r27
+3*4 last{1|3E10} 5r18 6r24 8m7 8r26
+

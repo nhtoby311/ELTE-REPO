@@ -1,16 +1,15 @@
-with  Ada.Integer_Text_IO, Ada.Text_IO;
-use  Ada.Integer_Text_IO, Ada.Text_IO;
+ with Ada.Numerics.Discrete_Random, Ada.Integer_Text_IO, Ada.Text_IO;
+    use Ada.Integer_Text_IO, Ada.Text_IO;
 
-procedure main is
-    type Elem is new Integer;
-    type Index is new Integer;
+    procedure main is
+      package Random_int is new Ada.Numerics.Discrete_Random (Integer);
+      G : Random_int.Generator;
+    begin
+      Random_int.Reset(G);
 
-    type TArray is array (Index range <>) of Elem;
-    
-    Arr : TArray := (4,5,3,2,1,1);
-begin
-    -- for I in Arr'Range loop
-    --     Put_Line( Elem'Image( Arr(I) ) );
-    -- end loop;
-    Put_Line("Last Elem: " & Elem'Image(Arr'Last)) ;
-end main;
+        Put("random Integer : ");
+        Put(Random_int.Random(G));
+        new_line;
+
+      
+    end main;

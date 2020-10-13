@@ -1,15 +1,9 @@
- with Ada.Numerics.Discrete_Random, Ada.Integer_Text_IO, Ada.Text_IO;
-    use Ada.Integer_Text_IO, Ada.Text_IO;
-
-    procedure main is
-      package Random_int is new Ada.Numerics.Discrete_Random (Integer);
-      G : Random_int.Generator;
-    begin
-      Random_int.Reset(G);
-
-        Put("random Integer : ");
-        Put(Random_int.Random(G));
-        new_line;
-
-      
-    end main;
+with aircraft; use aircraft;
+procedure main is 
+  
+  A: Aircraft_Type('1');
+  B: Aircraft_Type('2');
+  begin
+    printAir(A);
+    printAir(B);
+  end main;

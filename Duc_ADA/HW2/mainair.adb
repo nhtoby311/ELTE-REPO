@@ -1,6 +1,7 @@
 with Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
-use Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
-
+use  Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
+-- with Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
+-- use Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
 procedure mainair is
   package My_Aircraft is new Aircraft(character);
   use My_Aircraft;
@@ -8,7 +9,7 @@ procedure mainair is
   A:Aircraft_Type('1');
   B:Aircraft_Type('2');
 
-  procedure Change(I:out character; B:out boolean; C:out Coord) is
+  procedure Change(I:out character; B:out boolean; C: out Coord) is
   begin
     I := '3';
     B := false;
@@ -24,7 +25,6 @@ procedure mainair is
 
 procedure My_Action is new Action(Change);
 begin
-
   for i in 0..100 loop
     for j in 0..100 loop
       My_map(i,j) := tmp_cnt_map;

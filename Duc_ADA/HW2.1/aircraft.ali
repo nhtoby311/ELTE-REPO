@@ -1,0 +1,141 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U aircraft%b		aircraft.adb		3991c6c3 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W card_dir%s		card_dir.ads		card_dir.ali
+W coords%s		coords.adb		coords.ali
+
+U aircraft%s		aircraft.ads		8ccfbbf8 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W card_dir%s		card_dir.ads		card_dir.ali
+W coords%s		coords.adb		coords.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050642 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050642 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050642 0bfd6ec4 ada.numerics.discrete_random%b
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D aircraft.ads		20201014161704 821932e6 aircraft%s
+D aircraft.adb		20201014161702 422e77a5 aircraft%b
+D card_dir.ads		20201014161705 a146b7b9 card_dir%s
+D coords.ads		20201014161708 f614e154 coords%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050647 085b6ffb system%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050646 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [aircraft standard 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r23 9r28 12|1r23 1r55
+X 4 a-numeri.ads
+16K13*Numerics 32e17 11|1r27 9r32
+X 5 a-nudira.ads
+44k22*Discrete_Random 81e33 11|1w36 9r41
+50R9 Generator<22|63R9> 11|11r10[9]
+52V13 Random{integer} 12|58s14[11|9] 61s14[11|9]
+61U14 Reset<22|100p14> 12|57s7[11|9] 60s7[11|9]
+X 9 a-textio.ads
+57K13*Text_IO 727e16 12|1w27 1r59
+508U14*Put_Line 12|75s10 77s10 79s10
+X 11 aircraft.ads
+3+9 ID 4r36
+4V19 "<"{boolean} 4>23 4>28
+4*23 left{3+9}
+4*28 right{3+9}
+7k9*Aircraft 3z9 4z19 35l5 35e13 12|2b14 98l5 98t13
+8I12*randRange{integer} 9r57 12r10
+9K12*Rand_Int[5|44] 10r8
+11r4*gen{5|50R9[9]} 12|57r13 58r21 60r13 61r21
+12i4*num{8I12} 12|58m7 59r24 61m7 62r24
+13R9*Aircraft_Type 13d23 17e14 18r31 19r29 20r33 21r25 22r34 23r43 24r29
+. 25r29 25r50 26r29 26r47 29r28 12|3r31 7r30 12r33 17r25 22r34 27r43 55r29
+. 67r29 67r47 72r29 72r50 83r28
+13e23 I{character} 14r25
+14e7 name{character} 12|74r17 74r28 76r17 76r27 88r14
+15r7 Position{14|3R9} 12|19r16 24m9 30m18 30r35 32m18 32r35 34m18 34r35 36m18
+. 36r35 38m18 38r35 39m18 39r35 41m18 41r35 42m18 42r35 44m18 44r35 45m18
+. 45r35 47m18 47r35 48m18 48r35 59m15 62m15 69r37 69r49 90r14
+16b7 Is_In_The_Air{boolean} 12|5m9 9m9 14r16 89r14
+18U14*Ascend 18=21 12|3b14 6l8 6t14
+18r21 A{13R9} 12|3b21 5m7
+19U14*Land 19=19 12|7b14 10l8 10t12
+19r19 A{13R9} 12|7b19 9m7
+20V13*Get_Is_In_The_Air{boolean} 20>31 12|12b13 15l8 15t25
+20r31 A{13R9} 12|12b31 14r14
+21V13*Get_Coord{14|3R9} 21>23 12|17b13 20l8 20t17
+21r23 A{13R9} 12|17b23 19r14
+22U14*Set_Coord 22=24 22>50 12|22b14 25l8 25t17
+22r24 A{13R9} 12|22b24 24m7
+22r50 C{14|3R9} 12|22b50 24r21
+23U14*Set_Card_Dir_Coord 23=33 23>58 12|27b14 53l8 53t26
+23r33 A{13R9} 12|27b33 30m16 30r16 30r33 32m16 32r16 32r33 34m16 34r16 34r33
+. 36m16 36r16 36r33 38m16 38r16 38r33 39m16 39r16 39r33 41m16 41r16 41r33
+. 42m16 42r16 42r33 44m16 44r16 44r33 45m16 45r16 45r33 47m16 47r16 47r33
+. 48m16 48r16 48r33
+23e58 Cd{13|2E9} 12|27b58 29r10 31r13 33r13 35r14 37r13 40r13 43r13 46r14
+24U14*Start 24=20 12|55b14 65l8 65t13
+24r20 A{13R9} 12|55b20 59m13 59r13 62m13 62r13
+25U14*Compare 25>22 25>43 12|72b14 81l8 81t15
+25r22 A1{13R9} 12|72b22 74r14 76r14
+25r43 A2{13R9} 12|72b43 74r25 76r24
+26V13*Get_Distance{integer} 26>26 26>43 12|67b13 70l8 70t20
+26r26 A1{13R9} 12|67b26 69r34
+26r43 A2{13R9} 12|67b43 69r46
+28U21 Op 28<24 28<41 28<56 12|91s7
+28e24 I{character}
+28b41 B{boolean}
+28r56 C{14|3R9}
+29u14*Action 29>21 12|83b14 93l8 93t14
+29r21 A{13R9} 12|83b21 88r12 89r12 90r12
+X 12 aircraft.adb
+84e7 I{character} 88m7 91m10
+85b7 B{boolean} 89m7 91m12
+86r7 C{14|3R9} 90m7 91m14
+X 13 card_dir.ads
+1K9*Card_Dir 11|1w14 1r63 12|1w14 1r46 13|3e13
+2E9*Cardinal_Direction 11|23r65 12|27r65 13|2e59
+2n32*N{2E9} 12|29r15
+2n35*NE{2E9} 12|37r17
+2n39*E{2E9} 12|33r18
+2n42*SE{2E9} 12|40r18
+2n46*S{2E9} 12|31r18
+2n49*SW{2E9} 12|43r18
+2n53*W{2E9} 12|35r19
+2n56*NW{2E9} 12|46r19
+X 14 coords.ads
+2K9*Coords 11|1w6 1r56 12|1w6 1r39 69r14 14|20e11
+3R9*Coord 11|15r18 21r47 22r55 28r62 12|17r47 22r55 86r11 14|19e14
+4V13*Get_X{integer} 12|34s27 36s27 38s27 41s27 44s27 47s27
+5V13*Get_Y{integer} 12|30s27 32s27 39s27 42s27 45s27 48s27
+6U14*Set_X 12|34s10 36s10 38s10 41s10 44s10 47s10 59s7
+7U14*Set_Y 12|30s10 32s10 39s10 42s10 45s10 48s10 62s7
+8V13*Get_Distance{integer} 12|69s21
+

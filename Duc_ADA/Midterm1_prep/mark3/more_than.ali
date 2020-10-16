@@ -1,0 +1,27 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U more_than%b		more_than.adb		408906e0 NE OO SU GE
+
+U more_than%s		more_than.ads		cd543d3c BN EE NE OO GE
+
+D more_than.ads		20201014185932 cd543d3c more_than%s
+D more_than.adb		20201014190328 8ddd3bdc more_than%b
+D system.ads		20200819050647 085b6ffb system%s
+G a e
+G c Z s b [more_than standard 4 14 none]
+X 1 more_than.ads
+2E10 Index 3r25 3r41
+3A10 Grid(natural)<2E10><2E10> 4r27 2|1r24
+4v14*More_Than 4>24 4>33 2|1b10 14l9 14t18
+4*24 G{3A10} 2|1b21 5r18 6r22 8r29
+4i33 Max{natural} 2|1b30 7r27
+X 2 more_than.adb
+2i5 CNT{natural} 7r21 9m21 9r27 13r16
+3i5 S{natural} 8m21 8r25
+5e13 i 8r31
+6e17 j 8r33
+

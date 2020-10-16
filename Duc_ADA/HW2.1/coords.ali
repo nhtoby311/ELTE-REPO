@@ -1,0 +1,66 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U coords%b		coords.adb		132b456b NE OO PK
+
+U coords%s		coords.ads		575256ed BN EE NE OO PK
+W card_dir%s		card_dir.ads		card_dir.ali
+
+D card_dir.ads		20201014161705 a146b7b9 card_dir%s
+D coords.ads		20201014161708 f614e154 coords%s
+D coords.adb		20201014161706 e53fa43f coords%b
+D system.ads		20200819050647 085b6ffb system%s
+G a e
+G c Z s b [get_x coords 4 13 none]
+G c Z s b [get_y coords 5 13 none]
+G c Z s b [set_x coords 6 14 none]
+G c Z s b [set_y coords 7 14 none]
+G c Z s b [get_distance coords 8 13 none]
+G c Z s b [change_to_direction coords 9 14 none]
+G c Z s s [coordIP coords 16 9 none]
+X 1 card_dir.ads
+1K9*Card_Dir 3e13 2|1w6 1r19
+2E9*Cardinal_Direction 2e59 2|9r42 3|27r42
+2n32*N{2E9} 3|29r15
+2n35*NE{2E9} 3|37r17
+2n39*E{2E9} 3|33r18
+2n42*SE{2E9} 3|40r18
+2n46*S{2E9} 3|31r18
+2n49*SW{2E9} 3|43r18
+2n53*W{2E9} 3|35r19
+2n56*NW{2E9} 3|46r19
+X 2 coords.ads
+2K9*Coords 16E9 20l5 20e11 3|1b14 63l5 63t11
+3R9*Coord 4r21 5r21 6r30 7r30 8r29 8r41 9r72 13r41 16c9 19e14 3|2r21 7r21
+. 12r30 17r30 22r29 22r41 27r72 53r41
+4V13*Get_X{integer} 4>19 3|2b13 5l8 5t13
+4r19 C{3R9} 3|2b19 4r14
+5V13*Get_Y{integer} 5>19 3|7b13 10l8 10t13
+5r19 C{3R9} 3|7b19 9r14
+6U14*Set_X 6=20 6>36 3|12b14 15l8 15t13
+6r20 C{3R9} 3|12b20 14m7
+6i36 number{integer} 3|12b36 14r14
+7U14*Set_Y 7=20 7>36 3|17b14 20l8 20t13
+7r20 C{3R9} 3|17b20 19m7
+7i36 number{integer} 3|17b36 19r14
+8V13*Get_Distance{integer} 8>26 8>37 3|22b13 25l8 25t20
+8r26 C1{3R9} 3|22b26 24r16 24r39
+8r37 C2{3R9} 3|22b37 24r25 24r48
+9U14*Change_To_Direction 9>34 9=63 3|27b14 51l9 51t28
+9e34 Cd{1|2E9} 3|27b34 29r10 31r13 33r13 35r14 37r13 40r13 43r13 46r14
+9r63 C{3R9} 3|27b63 30m10 30r17 32m10 32r17 34m10 34r17 36m10 36r17 38m10
+. 38r17 39m10 39r17 41m10 41r17 42m10 42r17 44m10 44r17 45m10 45r17 47m10
+. 47r17 48m10 48r17
+11+12 Item 12r63 13r56 3|53r55
+12A12 Map(11+12)<integer><integer> 13r35 3|53r35
+13v13*Coord_With_Array 13>31 13>39 3|53b13 56l8 56t24
+13*31 arr{12A12} 3|53b31 55r14
+13r39 C{3R9} 3|53b39 55r18 55r22
+17i7*x{integer} 3|4r16 14m9 24r19 24r28 34m12 34r19 36m12 36r19 38m12 38r19
+. 41m12 41r19 44m12 44r19 47m12 47r19 55r20
+18i7*y{integer} 3|9r16 19m9 24r42 24r51 30m12 30r19 32m12 32r19 39m12 39r19
+. 42m12 42r19 45m12 45r19 48m12 48r19 55r24
+

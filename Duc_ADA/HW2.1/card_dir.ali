@@ -1,0 +1,22 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+
+U card_dir%s		card_dir.ads		a146b7b9 NE OO PK
+
+D card_dir.ads		20201014161705 a146b7b9 card_dir%s
+D system.ads		20200819050647 085b6ffb system%s
+G a e
+X 1 card_dir.ads
+1K9*Card_Dir 3l5 3e13
+2E9*Cardinal_Direction 2e59
+2n32*N{2E9}
+2n35*NE{2E9}
+2n39*E{2E9}
+2n42*SE{2E9}
+2n46*S{2E9}
+2n49*SW{2E9}
+2n53*W{2E9}
+2n56*NW{2E9}
+

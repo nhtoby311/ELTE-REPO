@@ -5,36 +5,33 @@ generic
     type Id is private;
     -- type Index is (<>);
     -- type TA is array (Index range <>) of Id;
-    with function "<" ( A, B: Id ) return Boolean is <>;
+    with function "<" (A,B: Id) return Boolean is <>;
 package Aircraft is
 
-    type Aircraft_Type is record --(Name: Character) is record
-        ID: Character := Name;   -- = name     
-        C : Coord; -- = Position
+    type Aircraft_Type (I: Character) is record
+        ID: Character := I;  
+        C : Coord; 
         Is_In_The_Air: Boolean := False; 
     end record;
 
     procedure Ascend(A: in out Aircraft_Type);
     procedure Land(A: in out Aircraft_Type); 
     function Get_Is_In_The_Air(A:Aircraft_Type) return Boolean ;
-    function Get_Coord(A:Aircraft_Type) return Coord ;
-    procedure Set_Card_Dir_Coord(A: in out Aircraft_Type;D: in Cardinal_Direction) ;
-    procedure Start(A: in out Aircraft_Type) ;
-    procedure Compare(A1,A2: in Aircraft_Type) ;
-    function Get_Distance(A1: Aircraft_Type; A2:Aircraft_Type) return Integer;
+    function Get_Coord(A:Aircraft_Type) return Coord ;        
+
+    procedure Set_Card_Dir_Coord (A: in out Aircraft_Type;D: in Cardinal_Direction ); -- random 
     
-    procedure Set_Card_Dir_Coord (A: in out Aircraft_Type;D: in out Cardinal_Direction );
     procedure Start(A: in out Aircraft_Type);
     procedure Compare(A1,A2: in Aircraft_Type);
     function Get_Distance(A1,A2: in Aircraft_Type) return Integer;
-    
-    
+
     generic
-        with procedure Gene(ID: out Character, C: out Coord, Is_In_The_Air: out Boolean )
+        with procedure Change(I:out character; B:out boolean; C: out Coord);
             procedure Action (A: in AirCraft_Type);
 
     private
         procedure Set_Coord(A: in out Aircraft_Type; C: in out Coord) ;
+        
 end Aircraft;
 -- Define a generic package which implements the Aircraft type. It has 2 generic parameters: an (Id) for airplane identifications, and the (<) operator to compare Id type variables.
 

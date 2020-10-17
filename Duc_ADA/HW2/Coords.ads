@@ -14,7 +14,7 @@ package Coords is
     generic
         type Item is private;
         type Map is array ( Integer range <>, Integer range <> ) of Item;
-        function Coord_With_Array(M: Map;C:Coords) return Item;
+        function Coord_With_Array(M: Map;C:Coord) return Item;
 
 private
    type Coord is record

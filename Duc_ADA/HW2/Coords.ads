@@ -1,6 +1,7 @@
 with Card_Dir; use Card_Dir;
     -- The function takes a Coord type object and Map type array and returns the element of the Map which is on the (X, Y) represented by Coord.
 package Coords is
+
     type Coord is private;
 
     function Get_X(C: Coord) return Integer;
@@ -12,13 +13,13 @@ package Coords is
 
     generic
         type Item is private;
-        type Index is (<>);
-        type Map is array ( Index range <>, Index range <> ) of Item;
-        function Coord_With_Array(I: Item;M: Map) return Item;
+        type Map is array ( Integer range <>, Integer range <> ) of Item;
+        function Coord_With_Array(M: Map;C:Coords) return Item;
 
 private
    type Coord is record
             X : Integer;
             Y : Integer;
    end record;
+   
 end Coords;

@@ -1,7 +1,5 @@
 with Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
-use  Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
--- with Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
--- use Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
+use Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
 procedure mainair is
   package My_Aircraft is new Aircraft(character);
   use My_Aircraft;

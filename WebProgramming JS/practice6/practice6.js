@@ -32,11 +32,18 @@ const ball = { // initialize ball
         y: 0,
     }
 };
+
 ball.position.x = paddle.position.x + paddle.width /2 - ball.radius;
 ball.position.y = paddle.position.y - 2 * ball.radius;
+let frameCount= 0;
+const startTime = Date.now();
+
 function render () {
     requestAnimationFrame(render);                              // ask browser to render anytimes
     context.clearRect(0,0, canvas.width, canvas.height) ;       // clear the context from 0,0 to entire screen
+    const elapsedTime = Date.now() - startTime;                 //render FPS
+    const fps = frameCount / (elapsedTime / 1000);
+    context.fillText(Math.floor(fps) + ' FPS', canvas.width - 50, 12);
     context.fillRect(paddle.position.x, paddle.position.y, paddle.width, paddle.height); //render paddle
     for ( let i = 0; i< bricks.length; ++i){                    //render bricks
         for (let j = 0 ; j < bricks[i].length; ++j){
@@ -95,10 +102,22 @@ function render () {
                 x + brickWidth > ball.position.x &&
                 y < ball.position.y + 2 * ball.radius &&
                 y + brickHeight > ball.position.y) {
-                 ball.velocity.y *= -1;
-             }
+                ball.velocity.x *= -1;
+                ball.velocity.y *= -1;
+                break;
+            }
         }
     }
+    if (paddle.position.x < ball.position.x + 2 * ball.radius &&
+        paddle.position.x + paddle.width > ball.position.x &&
+        paddle.position.y < ball.position.y + 2 * ball.radius &&
+        paddle.position.y + paddle.height > ball.position.y) {
+        if (Math.random () < 0.5){
+            ball.velocity.x *= Math.random();
+        }
+        ball.velocity.y *= -1;
+    }
+    ++frameCount;
 }
 render();
 

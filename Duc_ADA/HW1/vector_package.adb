@@ -48,8 +48,8 @@ package body vector_package is
     begin
         V.Pointer := V.Pointer + n;
         for I in 1..V.Pointer loop
-            for i in 1..n loop
-                V.Data(T + i) := number;
+            for J in 1..n loop
+                V.Data(T + J) := number;
             end loop;
         end loop;
     end;

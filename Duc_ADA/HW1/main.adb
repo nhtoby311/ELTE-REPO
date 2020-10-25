@@ -27,7 +27,7 @@ begin
     print_Vector(V);
     New_Line;
     Put_Line("Remove 5: ");
-    remove(V,5,true);
+    remove(V,5,false);
     print_Vector(V);
     New_Line;
     insert (A,1);

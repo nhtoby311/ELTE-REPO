@@ -13,13 +13,14 @@ package vector_package is
    procedure insert(V: in out Vector; number: Integer); -- insert a number into the Vector
    procedure assign(V: in out Vector; n, number: Integer );  -- insert a number to the Vector n times
    procedure pop(V: in out Vector); -- remove a number from the Vector
+   procedure remove1(V: in out Vector; number: Integer; all_occurrences: Boolean:= False); -- remove a number from the Vector, with all_occurrences False as default to remove first occurrence only, otherwise remove all occurrences
    procedure remove(V: in out Vector; number: Integer; all_occurrences: Boolean:= False); -- remove a number from the Vector, with all_occurrences False as default to remove first occurrence only, otherwise remove all occurrences
    procedure swap(V1, V2: in out Vector); -- swap two Vectors
    procedure join(V1, V2: in out Vector); -- join two Vectors into the first
    function compare(V1, V2: Vector) return Boolean; -- compare if two Vectors have the same numbers
    procedure copy(V: in out Vector; arr: TArray); -- copy numbers from the array to the Vector
    procedure clear(V: in out Vector); -- clear the Vector and make it empty 
-   procedure printVec(V: in Vector);
+   procedure print_Vector(V: in Vector);
 
 private
    type Vector(Max: Length :=100) is record

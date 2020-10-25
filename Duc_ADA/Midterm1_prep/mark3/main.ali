@@ -6,12 +6,13 @@ RN
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U main%b		main.adb		1dbb7248 NE OO SU
+U main%b		main.adb		035153bf NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W more_than%s		more_than.adb		more_than.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
 
 D ada.ads		20200819050642 76789da1 ada%s
 D a-except.ads		20200819050642 a7106115 ada.exceptions%s
@@ -24,13 +25,14 @@ D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200819050644 5ab55268 interfaces%s
 D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
-D main.adb		20201014190215 885013bd main%b
-D more_than.ads		20201014185932 cd543d3c more_than%s
-D more_than.adb		20201014190328 8ddd3bdc more_than%b
+D main.adb		20201020103654 f540d7f7 main%b
+D more_than.ads		20201020103637 aeaed881 more_than%s
+D more_than.adb		20201020103625 51c4161e more_than%b
 D system.ads		20200819050647 085b6ffb system%s
 D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
 D s-exctab.ads		20200819050645 54135002 system.exception_table%s
 D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgboo.ads		20200819050645 f5d971eb system.img_bool%s
 D s-parame.ads		20200819050646 4752c4cb system.parameters%s
 D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
@@ -49,13 +51,12 @@ X 3 a-inteio.ads
 18K13*Integer_Text_IO[8|46] 12|1w34 2r22
 X 7 a-textio.ads
 57K13*Text_IO 727e16 12|1w21 2r9
-X 8 a-tiinio.ads
-80U14*Put 12|9s5[3|18]
+465U14*Put 12|9s5
 X 12 main.adb
 3U11*Main 3b11 10l5 10t9
 4A10 M(natural)<integer><integer> 5r45 6r8
-5V14 test[13|4]{natural} 9s9 14|1b10
-6a5 G{4A10} 9r14
+5V14 test[13|4]{boolean} 9s23 14|1b10
+6a5 G{4A10} 9r28
 X 13 more_than.ads
 4v14*More_Than 12|1w6 5r26
 

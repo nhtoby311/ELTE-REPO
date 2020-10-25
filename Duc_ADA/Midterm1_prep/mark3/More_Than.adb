@@ -1,4 +1,4 @@
-function More_Than (G: Grid; Max: Natural) return Natural is 
+function More_Than (G: Grid; Max: Natural) return Boolean is 
     CNT: Natural:=0;
     S: Natural := 0;    
     begin
@@ -10,5 +10,8 @@ function More_Than (G: Grid; Max: Natural) return Natural is
                 end if;
             end loop;
         end loop;
-        return CNT;
+        if (CNT>Max) then 
+            return False;
+        else return True;
+        end if;
     end More_Than;

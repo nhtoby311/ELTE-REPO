@@ -1,9 +1,8 @@
-with Gen, Ada.Text_IO, Ada.Integer_Text_IO;
+with Count, Ada.Text_IO, Ada.Integer_Text_IO;
 use Ada.Text_IO, Ada.Integer_Text_IO;
 procedure Main is
-    type M is array (Integer range <> , Integer range <>) of Natural;
-    function test is new Count(Integer,M);
-    G: M (1..2,1..2):= ((0,2),(3,4));
+    package IQueue is new PQueue(Integer);
+    PQ: IQueue.PQueue(100);
 begin
-    Put(test(G));
+    IQueue.Insert(PQ, 10, 2);
 end Main; -- OUTPUT: 9

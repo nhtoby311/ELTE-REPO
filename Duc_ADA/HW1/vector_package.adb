@@ -2,12 +2,12 @@ with Ada.Integer_Text_IO, Ada.Text_IO;
 use Ada.Integer_Text_IO, Ada.Text_IO;
 package body vector_package is
 
-    procedure printVec(V: in Vector) is 
+    procedure print_Vector(V: in Vector) is 
         begin
             for I in 1..V.Pointer loop
                 Put(Integer'Image(V.Data(i)) & " ");
             end loop;
-        end printVec;
+        end print_Vector;
 
     function size(V: Vector) return Natural is
         begin
@@ -35,25 +35,20 @@ package body vector_package is
             return False;
         end is_Empty;
     
-    procedure insert(V: in out Vector; number: Integer) is 
-        
-        begin 
-            if V.Pointer < V.Data'Length then                  
-                for I in reverse 2..V.Pointer+1 loop                     
-                        V.Data(I):= V.Data(I-1);                                            
-                end loop;
-                V.Data(1):= number;                                
-                V.Pointer := V.Pointer+1;
-            end if;                        
-        end insert;  
-    
-
-    procedure assign(V: in out Vector; n, number: Integer ) is 
+    procedure insert(V: in out Vector; number: Integer) is -- insert a number into the Vector
         begin
-            for I in 1..n loop
-                insert (V,number);
-            end loop;
-        end assign;
+        if V.Pointer + 1 <= V.Max then
+            V.Pointer := V.Pointer + 1;
+            V.Data(V.Pointer) := number;
+        end if;
+    end;
+
+    procedure assign(V: in out Vector; n, number: Integer ) is  -- insert a number to the Vector n times
+    begin
+        for I in 1..n loop
+            insert(V,number); 
+        end loop;
+    end;
 
     procedure pop(V: in out Vector) is   
         begin
@@ -63,7 +58,32 @@ package body vector_package is
             V.Pointer := V.Pointer-1;            
         end pop;
 
-    procedure remove(V: in out Vector; number: Integer; all_occurrences: Boolean:= False) is
+    procedure remove(V: in out Vector; number: Integer; all_occurrences: Boolean:= False) is -- remove a number from the Vector, with all_occurrences False as default to remove first occurrence only, otherwise remove all occurrences
+        T : Integer ;
+        V_Temp: Vector;
+        begin
+            T := V.Pointer;
+            if (all_occurrences = False) then
+                for I in 1..V.Pointer loop
+                    if (V.Data(I) = number) then
+                        for J in I+1..V.Pointer loop
+                            V.Data(J-1) := V.Data(J);
+                        end loop;
+                        V.Pointer:= V.Pointer -1;
+                    end if;
+                    exit when V.Pointer < T;
+                end loop;
+            else
+                for I in 1..V.Pointer loop
+                    if not(V.Data(I) = number) then
+                        insert(V_Temp, V.Data(I));                    
+                    end if;
+                end loop;
+                swap(V,V_Temp);
+            end if;    
+    end remove;
+
+    procedure remove1(V: in out Vector; number: Integer; all_occurrences: Boolean:= False) is
         tmp : Integer:= V.Pointer;
         begin
             if (all_occurrences = True) then
@@ -89,7 +109,7 @@ package body vector_package is
                     exit when V.Pointer < tmp;
                 end loop;
             end if;
-        end remove;
+        end remove1;
 
     procedure swap(V1, V2: in out Vector) is -- swap two Vectors
         V3 : Vector (size(V1));
@@ -99,14 +119,14 @@ package body vector_package is
                     V3.Data(I) := V1.Data(I);
                     V3.Pointer := V3.Pointer+1;
                 end loop;
+                V1.Pointer:=V2.Pointer;
                 for I in 1..V1.Pointer loop
                     V1.Data(I):=V2.Data(I);
                 end loop;
-                V1.Pointer:=V2.Pointer;
+                V2.Pointer := V3.Pointer;
                 for I in 1..V3.Pointer loop
                     V2.Data(I):=V3.Data(I);
                 end loop;
-                V2.Pointer := V3.Pointer;
             end if;
         end swap;
 
@@ -129,17 +149,28 @@ package body vector_package is
         end join;
 
     function compare(V1, V2: Vector) return Boolean is
+        C: Boolean := False;
+        Cnt: Integer := 0;
         begin
             if (size(V1) /= size(V2)) then 
                 return False;
-            else
-                for I in 1..V1.Pointer loop
-                    if (V1.Data(I) /= V2.Data(I)) then
-                        return False;
+            else            
+            for I in 1..V1.Pointer loop
+                for J in 1..V2.Pointer loop
+                    if (V1.Data(I) = V2.Data(J)) then
+                        C:= True;
                     end if;
                 end loop;
+                if (C = True) then
+                    Cnt:= Cnt + 1;
+                end if;
+                C:=False;
+            end loop;
+                if (Cnt = V1.Pointer) then
+                return True;    
+                else return False;
+                end if;
             end if;
-            return True; 
         end compare;
     
     procedure copy(V: in out Vector; arr: TArray) is

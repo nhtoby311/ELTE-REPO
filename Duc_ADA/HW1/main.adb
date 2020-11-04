@@ -7,6 +7,7 @@ procedure main is
     A: Vector (100);
     C: TArray := (6,7,8,9,10);
     D: Vector (100);
+    E: Vector (100);
 begin
     insert (V,11);
     insert (V,12);
@@ -18,8 +19,8 @@ begin
     Put_Line("Size: " & Integer'Image(Size(V)));
     Put_Line("First: " & Integer'Image(first(V)));
     Put_Line("Last: " & Integer'Image(last(V)));
-    Put_Line("Assign 5 4 times:");
-    assign(V,4,5);
+    Put_Line("Assign 5 10 times:");
+    assign(V,10,5);
     print_Vector(V);
     New_Line;
     Put_Line("Pop: ");
@@ -27,7 +28,7 @@ begin
     print_Vector(V);
     New_Line;
     Put_Line("Remove 5: ");
-    remove(V,5,false);
+    remove(V,5,true);
     print_Vector(V);
     New_Line;
     insert (A,1);
@@ -58,12 +59,22 @@ begin
     clear(V);
     print_Vector(V);
 
-    insert (D,13);
-    insert (D,16);
-    insert(D,14);
-    insert(D,12);
-    print_Vector(A);
-    New_Line;
+    insert (D,2);
+    insert (D,1);
+    insert(D,3);
+   insert (D,5);
+    insert (D,7);
+    insert(D,66);
+
+    insert (E,3);
+    insert (E,1);
+    insert(E,2);
+    insert (E,4);
+    insert (E,5);
+    insert(E,7);
+
     print_Vector(D);
-    Put_Line("Compare A to D: " & Boolean'Image(compare(A,D)));
+    New_Line;
+    print_Vector(E);
+    Put_Line("Compare D to E: " & Boolean'Image(compare(E,D)));
 end main;

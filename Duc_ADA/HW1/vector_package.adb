@@ -44,16 +44,11 @@ package body vector_package is
     end;
 
     procedure assign(V: in out Vector; n, number: Integer ) is  -- insert a number to the Vector n times
-    T : Integer := V.Pointer;
     begin
-        V.Pointer := V.Pointer + n;
-        for I in 1..V.Pointer loop
-            for J in 1..n loop
-                V.Data(T + J) := number;
-            end loop;
+        for I in 1..n loop
+            insert(V,number); 
         end loop;
     end;
-
 
     procedure pop(V: in out Vector) is   
         begin
@@ -65,7 +60,7 @@ package body vector_package is
 
     procedure remove(V: in out Vector; number: Integer; all_occurrences: Boolean:= False) is -- remove a number from the Vector, with all_occurrences False as default to remove first occurrence only, otherwise remove all occurrences
         T : Integer ;
-        V3: Vector;
+        V_Temp: Vector;
         begin
             T := V.Pointer;
             if (all_occurrences = False) then
@@ -81,10 +76,10 @@ package body vector_package is
             else
                 for I in 1..V.Pointer loop
                     if not(V.Data(I) = number) then
-                        insert(V3, V.Data(I));                    
+                        insert(V_Temp, V.Data(I));                    
                     end if;
                 end loop;
-                swap(V,V3);
+                swap(V,V_Temp);
             end if;    
     end remove;
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>  
+  <figure>
+    <h1>SET GAME</h1>
+    <form>
+      <input type="submit" id='startGame' value="START GAME">
+      <input type="reset" id='reset' value="Reset">
+      <label for="level">DIFFICULTY:</label>
+      <select name="level" id="level">
+        <option value="HARD">HARD</option>
+        <option value="EASY">EASY</option>
+      </select>
+      <label for="players">TOTAL PLAYERS:</label>
+      <input type="number" id="players" name="players" value="1" default min="1" max="4">
+      <input type="submit" id="setNames"value="SET NAMES">
+      <div id="playersNames">
+      </div>
+    </form>
+  </figure>
+  <figure id="gameFigure">
+  </figure>
+    
+    
+  <script type = 'module' src="index.js"></script>
+</body>
+</html>

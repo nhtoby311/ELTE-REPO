@@ -59,22 +59,22 @@ begin
     clear(V);
     print_Vector(V);
 
-    insert (D,2);
-    insert (D,1);
-    insert(D,3);
+    insert (D,5);
+    insert (D,4);
+    insert(D,4);
    insert (D,5);
     insert (D,7);
     insert(D,66);
 
-    insert (E,3);
-    insert (E,1);
-    insert(E,2);
     insert (E,4);
+    insert (E,4);
+    insert(E,66);
+    insert (E,5);
     insert (E,5);
     insert(E,7);
 
     print_Vector(D);
     New_Line;
     print_Vector(E);
-    Put_Line("Compare D to E: " & Boolean'Image(compare(E,D)));
+    Put_Line("Compare D to E: " & Boolean'Image(compare2(E,D)));
 end main;

@@ -1,0 +1,130 @@
+V "GNAT Lib v2020"
+M P W=b
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U main%b		main.adb		fd539b5f NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-calend.ads		20200819050641 474d9720 ada.calendar%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-finali.ads		20200819050642 bf4f806b ada.finalization%s
+D a-inteio.ads		20200819050642 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050642 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050642 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050642 0bfd6ec4 ada.numerics.discrete_random%b
+D a-reatim.ads		20200819050640 0240fc73 ada.real_time%s
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-c.ads		20200819050644 c624fa43 interfaces.c%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D main.adb		20201130082335 bb258f45 main%b
+D system.ads		20200819050647 085b6ffb system%s
+D s-atacco.ads		20200819050645 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-finroo.ads		20200819050645 4ff27390 system.finalization_root%s
+D s-imgint.ads		20200819050645 02dbe0c2 system.img_int%s
+D s-multip.ads		20200819050645 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20200819111918 49f7716a system.os_constants%s
+D s-osinte.ads		20200819050640 01b3ad47 system.os_interface%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050646 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stausa.ads		20200819050646 017a0a05 system.stack_usage%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20200819050641 801abd01 system.task_info%s
+D s-taspri.ads		20200819050641 f40ac08d system.task_primitives%s
+D s-taprop.ads		20200819050641 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20200819050641 88fba9ad system.tasking%s
+D s-taprob.ads		20200819050641 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20200819050641 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20200819050641 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20200819050641 cca55c94 system.tasking.stages%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 18 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 19|16r7 16r20 16r40 16r70 17r5 17r18
+X 2 a-calend.ads
+36K13*Calendar 409e17 19|16w74
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[14|46] 19|16w24 17r22
+X 7 a-numeri.ads
+16K13*Numerics 32e17 19|16r44
+X 8 a-nudira.ads
+44k22*Discrete_Random 81e33 19|16w53
+X 13 a-textio.ads
+57K13*Text_IO 727e16 19|16w11 17r9
+508U14*Put_Line 19|28s13 48s21 49s21
+X 19 main.adb
+18U11*main 18b11 71l5 71t9
+20W20 Obj_Type 23l9 23e17 25b20 30l9 30t17
+21U19 Print 21>26 26b19 29l13 29t18
+21a26 S{string} 26b26 28r22
+32T15 Patient 35l9 35e16 36r32 37r29 40b15 55l9 55t16 66r5
+33Y15 Init 33>20 44b16 44l75 44t79 69s8
+33a20 Name{string} 44r64
+34Y15 say_Hello 47b24 50l21 50t30 70s8
+36a5 Patients(32T15)
+37P10 PPatient(32T15) 38r10
+38p5 Pat{37P10}
+41P14 PString(string) 42r12
+42p9 n{41P14} 44m48 49r30
+44a22 Name{string}
+66t1 Pa{32T15} 69r5 70r5
+X 35 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+

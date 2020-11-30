@@ -172,6 +172,31 @@ package body vector_package is
                 end if;
             end if;
         end compare;
+
+    function compare2(V1,V2: Vector) return Boolean is 
+        Tmp_V1: Vector ;
+        Tmp_V2: Vector ; 
+        L : length;
+    begin
+        if (V1.Pointer = V2.Pointer) then
+            L := V2.Data'First;
+            for I in L .. V2.Pointer loop
+                insert(Tmp_V2,V2.Data(I));
+            end loop;
+            L:=V1.Data'First;
+            for I in L .. V1.Pointer loop
+                insert(Tmp_V1,V1.Data(I));
+            end loop;
+            L:= Tmp_V1.Data'First;
+            for I in L .. Tmp_V1.Pointer loop
+                remove(Tmp_V2, Tmp_V1.Data(I));
+            end loop;
+            if is_Empty(Tmp_V2) then return true;
+            else return false;
+            end if;
+        end if;
+        return false;
+    end compare2;    
     
     procedure copy(V: in out Vector; arr: TArray) is
         begin

@@ -21,7 +21,7 @@ package vector_package is
    procedure copy(V: in out Vector; arr: TArray); -- copy numbers from the array to the Vector
    procedure clear(V: in out Vector); -- clear the Vector and make it empty 
    procedure print_Vector(V: in Vector);
-
+function compare2(V1, V2: Vector) return Boolean; 
 private
    type Vector(Max: Length :=100) is record
             Data: TArray(1..Max);

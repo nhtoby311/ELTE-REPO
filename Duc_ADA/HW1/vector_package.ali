@@ -1,0 +1,176 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U vector_package%b	vector_package.adb	6d37efe0 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U vector_package%s	vector_package.ads	e4b5e336 EE NE OO PK IL
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050642 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050647 085b6ffb system%s
+D s-conca2.ads		20200819050645 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050645 02dbe0c2 system.img_int%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+D vector_package.ads	20201111164339 e4b5e336 vector_package%s
+D vector_package.adb	20201111164428 d13d501f vector_package%b
+G a e
+G c Z s b [size vector_package 9 13 none]
+G c Z s b [first vector_package 10 13 none]
+G c Z s b [last vector_package 11 13 none]
+G c Z s b [is_empty vector_package 12 13 none]
+G c Z s b [insert vector_package 13 14 none]
+G c Z s b [assign vector_package 14 14 none]
+G c Z s b [pop vector_package 15 14 none]
+G c Z s b [remove1 vector_package 16 14 none]
+G c Z s b [remove vector_package 17 14 none]
+G c Z s b [swap vector_package 18 14 none]
+G c Z s b [join vector_package 19 14 none]
+G c Z s b [compare vector_package 20 13 none]
+G c Z s b [copy vector_package 21 14 none]
+G c Z s b [clear vector_package 22 14 none]
+G c Z s b [print_vector vector_package 23 14 none]
+G c Z s b [compare2 vector_package 24 10 none]
+G c Z s s [tarrayIP vector_package 7 9 none]
+G c Z s s [vectorIP vector_package 26 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 28|1r6 1r27 2r5 2r26
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 28|1w10 2r9
+X 7 a-textio.ads
+57K13*Text_IO 727e16 28|1w31 2r30
+465U14*Put 28|8s17
+508U14*Put_Line 28|214s13
+X 27 vector_package.ads
+3K9*vector_package 26E9 31l5 31e19 28|3b14 216l5 216t19
+5I12*Length{positive} 6r22 26r21 28|179r13
+6R9*Vector 6d17 9r21 10r22 11r21 12r26 13r31 14r31 15r28 16r32 17r31 18r34
+. 19r34 20r29 21r29 22r30 23r33 24r27 26c9 29e14 28|5r34 12r22 17r23 25r21
+. 30r27 38r32 46r32 53r29 61r32 63r17 86r33 114r35 115r14 133r35 134r14 151r30
+. 176r30 177r17 178r17 201r30 209r31
+6i17 Max{5I12} 26r16 27r29 28|40r31
+7A9*TArray(integer)<integer> 21r42 27r19 28|201r43
+9V13*size{natural} 9>18 28|12b14 15l13 15t17 115s22 134s22 134s31 155s17
+. 155s29 214s49
+9r18 V{6R9} 28|12b19 14r20
+10V13*first{integer} 10>19 28|17b14 23l13 23t18
+10r19 V{6R9} 28|17b20 19r27 20r21
+11V13*last{integer} 11>18 28|25b13 28l13 28t17
+11r18 V{6R9} 28|25b18 27r20 27r27
+12V13*is_Empty{boolean} 12>23 28|19s17 30b14 36l13 36t21 117s17 117s44 194s16
+. 211s20
+12r23 V{6R9} 28|30b24 32r17
+13U14*insert 13=21 13>39 28|38b15 44t8 49s13 79s25 184s17 188s17
+13r21 V{6R9} 28|38b22 40r12 40r29 41m13 41r26 42m13 42r20
+13i39 number{integer} 28|38b40 42r34
+14U14*assign 14=21 14>39 14>42 28|46b15 51t8
+14r21 V{6R9} 28|46b22 49m20
+14i39 n{integer} 28|46b40 48r21
+14i42 number{integer} 28|46b43 49r22
+15U14*pop 15=18 28|53b15 59l13 59t16 99s21 212s17
+15r18 V{6R9} 28|53b19 55r25 56m17 56r44 58m13 58r26
+16U14*remove1 16=22 16>40 16>57 28|86b15 112l13 112t20
+16r22 V{6R9} 28|86b23 87r25 90r29 91r25 92r39 93m29 93r56 95m25 95r37 98r21
+. 99m25 102r29 103r25 104r39 105m29 105r56 107m25 107r37 109r31
+16i40 number{integer} 28|86b41 91r37 98r33 103r37
+16b57 all_occurrences{boolean} 28|86b58 89r17
+17U14*remove 17=21 17>39 17>56 28|61b15 84l9 84t15 192s17
+17r21 V{6R9} 28|61b22 65r18 67r29 68r25 69r39 70m29 70r44 72m25 72r37 74r31
+. 77r29 78r28 79r40 82m22
+17i39 number{integer} 28|61b40 68r37 78r40
+17b56 all_occurrences{boolean} 28|61b57 66r17
+18U14*swap 18=19 18=23 28|82s17 114b15 131l13 131t17
+18r19 V1{6R9} 28|114b20 115r27 117r26 118r29 119r35 122m17 123r29 124m21
+18r23 V2{6R9} 28|114b24 117r53 122r29 124r33 126m17 128m21
+19U14*join 19=19 19=23 28|133b15 149l13 149t17
+19r19 V1{6R9} 28|133b20 134r27 136r25 137r30 144m13 146m17 147m17 147r31
+19r23 V2{6R9} 28|133b24 134r36 140r26 142r40
+20V13*compare{boolean} 20>21 20>25 28|151b14 174l13 174t20
+20r21 V1{6R9} 28|151b22 155r22 158r25 160r25 169r27
+20r25 V2{6R9} 28|151b26 155r34 159r29 160r38
+21U14*copy 21=19 21>37 28|201b15 207l13 207t17
+21r19 V{6R9} 28|201b20 204m17 204r30 205m17 205r24
+21a37 arr{7A9} 28|201b38 203r25 205r38
+22U14*clear 22=20 28|209b15 215l13 215t18
+22r20 V{6R9} 28|209b21 211r29 212m21 214r54
+23U14*print_Vector 23>27 28|5b15 10l13 10t25
+23r27 V{6R9} 28|5b28 7r25 8r35
+24V10*compare2{boolean} 24>19 24>23 28|176b14 199l9 199t17
+24r19 V1{6R9} 28|176b23 181r13 186r16 187r27 188r31
+24r23 V2{6R9} 28|176b26 181r26 182r18 183r27 184r31
+27a13*Data{7A9} 28|8r37 20r23 27r22 42m15 56m19 56r46 68r27 70m31 70r46 78r30
+. 79r42 91r27 93m31 93r58 98r23 103r27 105m31 105r58 119m24 119r38 124m24
+. 124r36 128m24 128r36 137m20 137r33 142m20 142r43 146m20 146r33 160r28 160r41
+. 182r21 184r34 186r19 188r34 190r24 192r39 205m19
+28i13*Pointer{natural} 28|7r27 14r22 27r29 32r19 40r14 41m15 41r28 42r22
+. 55r27 58m15 58r28 65r20 67r31 69r41 72m27 72r39 74r33 77r31 87r27 90r31
+. 92r41 95m27 95r39 102r31 104r41 107m27 107r39 109r33 118r32 120m24 120r38
+. 122m20 122r32 123r32 126m20 126r34 127r32 136r28 138m20 138r34 140r29 141m20
+. 141r34 142r28 144m16 145r29 147m20 147r34 158r28 159r32 169r30 181r16 181r29
+. 183r30 187r30 191r34 204m19 204r32 205r26
+X 28 vector_package.adb
+7i17 I{integer} 8r42
+48i13 I{integer}
+55i17 I{integer} 56r37 56r51
+62i9 T{integer} 65m13 74r43
+63r9 V_Temp{27|6R9} 79m32 79r32 82m24 82r24
+67i21 I{integer} 68r32 69r34
+69i29 J{integer} 70r36 70r51
+77i21 I{integer} 78r35 79r47
+87i9 tmp{integer} 109r43
+90i21 I{integer} 91r32 92r34
+92i29 J{integer} 93r49 93r63
+102i21 I{integer} 103r32 104r34
+104i29 J{integer} 105r49 105r63
+115r9 V3{27|6R9} 119m21 120m21 120r35 126r31 127r29 128r33
+118i21 I{integer} 119r29 119r43
+123i21 I{integer} 124r29 124r41
+127i21 I{integer} 128r29 128r41
+134r9 V3{27|6R9} 137m17 138m17 138r31 141m17 141r31 142m17 142r25 145r26
+. 146r30
+136i17 I{integer} 137r25 137r38
+140i17 I{integer} 142r48
+145i17 I{integer} 146r25 146r38
+152b9 C{boolean} 161m25 164r21 167m17
+153i9 Cnt{integer} 165m21 165r27 169r21
+158i17 I{integer} 160r33
+159i21 J{integer} 160r46
+177r9 Tmp_V1{27|6R9} 188m24 188r24 190r17 191r27 192r32
+178r9 Tmp_V2{27|6R9} 184m24 184r24 192m24 192r24 194r25
+179i9 L{27|5I12} 182m13 183r22 186m13 187r22 190m13 191r22
+183i17 I{integer} 184r39
+187i17 I{integer} 188r39
+191i17 I{integer} 192r44
+203i17 I{integer} 205r42
+

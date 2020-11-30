@@ -1,0 +1,116 @@
+V "GNAT Lib v2020"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U main%b		main.adb		11d7973c NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+W text_io%s		text_io.ads		text_io.ali
+W vector_package%s	vector_package.adb	vector_package.ali
+
+D ada.ads		20200819050642 76789da1 ada%s
+D a-except.ads		20200819050642 a7106115 ada.exceptions%s
+D a-flteio.ads		20200819050642 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200819050642 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050642 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050642 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050643 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050643 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200819050643 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200819050643 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050644 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
+D main.adb		20201111165405 6de5a7fb main%b
+D system.ads		20200819050647 085b6ffb system%s
+D s-conca2.ads		20200819050645 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200819050645 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050645 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050645 078245e4 system.file_control_block%s
+D s-imgboo.ads		20200819050645 f5d971eb system.img_bool%s
+D s-imgint.ads		20200819050645 02dbe0c2 system.img_int%s
+D s-parame.ads		20200819050646 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050646 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050646 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050646 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050646 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050646 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050646 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050646 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050646 1b7d22d2 system.wch_con%s
+D text_io.ads		20200819050647 21b2c898 text_io%s
+D vector_package.ads	20201111164339 e4b5e336 vector_package%s
+G a e
+G c Z b b [main standard 5 11 none]
+G r s vector [main standard 5 11 none] [vectorIP vector_package 26 9 none]
+G r c none [main standard 5 11 none] [insert vector_package 13 14 none]
+G r c none [main standard 5 11 none] [print_vector vector_package 23 14 none]
+G r c none [main standard 5 11 none] [size vector_package 9 13 none]
+G r c none [main standard 5 11 none] [first vector_package 10 13 none]
+G r c none [main standard 5 11 none] [last vector_package 11 13 none]
+G r c none [main standard 5 11 none] [assign vector_package 14 14 none]
+G r c none [main standard 5 11 none] [pop vector_package 15 14 none]
+G r c none [main standard 5 11 none] [remove vector_package 17 14 none]
+G r c none [main standard 5 11 none] [swap vector_package 18 14 none]
+G r c none [main standard 5 11 none] [join vector_package 19 14 none]
+G r c none [main standard 5 11 none] [compare vector_package 20 13 none]
+G r c none [main standard 5 11 none] [copy vector_package 21 14 none]
+G r c none [main standard 5 11 none] [clear vector_package 22 14 none]
+G r c none [main standard 5 11 none] [compare2 vector_package 24 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|2r6 2r27 2r40 3r5 3r26 3r39
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 14|2w44 3r43
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 14|2w10 3r9
+X 8 a-textio.ads
+57K13*Text_IO 727e16 14|2w31 3r30
+264U14*New_Line 14|18s5 25s5 29s5 33s5 41s5 43s5 46s5 48s5 52s5 57s5 77s5
+508U14*Put_Line 14|19s5 20s5 21s5 22s5 26s5 30s5 39s5 49s5 53s5 54s5 58s5
+. 79s5
+X 14 main.adb
+5U11*main 5b11 80l5 80t9
+6r5 V{32|6R9} 12m13 12r13 13m13 13r13 14m12 14r12 15m12 15r12 16m12 16r12
+. 17r18 19r44 20r46 21r44 23m12 23r12 24r18 27m9 27r9 28r18 31m12 31r12 32r18
+. 40r18 44m10 44r10 45r18 50m10 50r10 51r18 55m10 55r10 56r18 59m11 59r11
+. 60r18
+7r5 A{32|6R9} 34m13 34r13 35m13 35r13 36m12 36r12 37m12 37r12 38m12 38r12
+. 42r18 44m12 44r12 47r18 50m12 50r12 53r57 53r59
+8a5 C{32|7A9} 55r12
+9r5 D{32|6R9} 62m13 62r13 63m13 63r13 64m12 64r12 65m12 65r12 66m13 66r13
+. 67m12 67r12 76r18 79r60
+10r5 E{32|6R9} 69m13 69r13 70m13 70r13 71m12 71r12 72m13 72r13 73m13 73r13
+. 74m12 74r12 78r18 79r58
+X 31 text_io.ads
+24K9*Text_IO=24:29 14|2w59 3r58
+X 32 vector_package.ads
+3K9*vector_package 14|1w6 1r26 32|31e19
+6R9*Vector 14|6r8 7r8 9r8 10r8 32|29e14
+7A9*TArray(integer)<integer> 14|8r8
+9V13*size{natural} 14|19s39
+10V13*first{integer} 14|20s40
+11V13*last{integer} 14|21s39
+13U14*insert 14|12s5 13s5 14s5 15s5 16s5 34s5 35s5 36s5 37s5 38s5 62s5 63s5
+. 64s5 65s4 66s5 67s5 69s5 70s5 71s5 72s5 73s5 74s5
+14U14*assign 14|23s5
+15U14*pop 14|27s5
+17U14*remove 14|31s5
+18U14*swap 14|44s5
+19U14*join 14|50s5
+20V13*compare{boolean} 14|53s49
+21U14*copy 14|55s5
+22U14*clear 14|59s5
+23U14*print_Vector 14|17s5 24s5 28s5 32s5 40s5 42s5 45s5 47s5 51s5 56s5 60s5
+. 76s5 78s5
+24V10*compare2{boolean} 14|79s49
+

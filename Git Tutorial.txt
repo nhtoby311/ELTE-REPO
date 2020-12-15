@@ -11,7 +11,7 @@ help        # get help
 --help      # get help
 man         # manual
 cat         # output the contents of a file
-mkdir       # create new directory
+mkdir       # create new directoryy
 open        # open a file with the associated program, a directory with Finder, or a URL with the default web browser
 ps          # list all running processes
 kill        # terminate existing process
